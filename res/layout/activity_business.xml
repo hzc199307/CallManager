@@ -13,7 +13,7 @@
             android:layout_marginTop="14dp"
             android:gravity="center_vertical"
             android:clickable="true"
-            android:background="@drawable/preference_single_item" >
+            android:background="@drawable/preference_first_item" >
       		<ImageView
       		    android:id="@+id/add_friend"
             	android:layout_width="wrap_content"
@@ -39,7 +39,99 @@
         		android:layout_alignParentRight="true"
         		android:src="@drawable/mm_submenu" />      					
    		</RelativeLayout>
-   		
+   		<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+			      		<ImageView
+      		    android:id="@+id/add_friend"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentLeft="true"
+        		android:src="@drawable/attribution" /> 
+            <TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/add_friend"
+        		android:layout_centerVertical="true"
+        		android:padding="8dp" 
+        		android:text="余额查询"
+        		android:textSize="17sp"		
+				android:textColor="#000" />      
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" /> 					
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+						      		<ImageView
+      		    android:id="@+id/add_friend"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentLeft="true"
+        		android:src="@drawable/attribution" /> 
+            <TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/add_friend"
+        		android:layout_centerVertical="true"
+        		android:padding="8dp" 
+        		android:text="余额查询"
+        		android:textSize="17sp"		
+				android:textColor="#000" />     
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" /> 					
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+						      		<ImageView
+      		    android:id="@+id/add_friend"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentLeft="true"
+        		android:src="@drawable/attribution" /> 
+            <TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/add_friend"
+        		android:layout_centerVertical="true"
+        		android:padding="8dp" 
+        		android:text="余额查询"
+        		android:textSize="17sp"		
+				android:textColor="#000" />  
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
 		
 
     </LinearLayout>
