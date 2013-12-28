@@ -8,7 +8,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
-import com.example.callmanager.R;
+import com.xp.callmanager.R;
 import com.xp.callmanager.DBHelper.DBHelper;
 
 import android.os.Bundle;
@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 		new Handler().postDelayed(new Runnable(){
 			@Override
 			public void run(){
-				Intent intent = new Intent (MainActivity.this,null); //跳转到主页面	
+				Intent intent = new Intent (MainActivity.this,TabsActivity.class); //跳转到主页面	
 				startActivity(intent);			
 				MainActivity.this.finish();
 			}

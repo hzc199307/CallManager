@@ -1,7 +1,8 @@
 package com.xp.callmanager.Activity;
 
-import com.example.callmanager.R;
 
+
+import com.xp.callmanager.R;
 
 import android.app.TabActivity;
 import android.content.Intent;
@@ -15,24 +16,24 @@ public class TabsActivity extends TabActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tabs);
 		
-		TabHost mTabHost = (TabHost)findViewById(R.id.main_tabhost);
+		TabHost mTabHost = getTabHost();
 		mTabHost.setup();
 		
-//		mTabHost.addTab(mTabHost.newTabSpec("incoming").setIndicator("接入",
-//				getResources().getDrawable(R.drawable.incoming)).setContent(
-//				new Intent(this, IncomingContactList.class)));
-//
-//		mTabHost.addTab(mTabHost.newTabSpec("goouting").setIndicator("拨出",
-//				getResources().getDrawable(R.drawable.outgoing)).setContent(
-//				new Intent(this, OutgoingContactList.class)));
-//		mTabHost.addTab(mTabHost.newTabSpec("missed").setIndicator("未接",
-//				getResources().getDrawable(R.drawable.missed)).setContent(
-//				new Intent(this, MissedContactList.class)));
-//		mTabHost.addTab(mTabHost.newTabSpec("total").setIndicator("总计",
-//				getResources().getDrawable(R.drawable.total)).setContent(
-//				new Intent(this, TotalDisplay.class)));
+		mTabHost.addTab(mTabHost.newTabSpec("sfb").setIndicator("省费宝",
+				getResources().getDrawable(R.drawable.sfb_01)).setContent(
+				new Intent(this, CallManagerActivity.class)));
+
+		mTabHost.addTab(mTabHost.newTabSpec("tx").setIndicator("通讯",
+				getResources().getDrawable(R.drawable.tx_01)).setContent(
+				new Intent(this, TongxunActivity.class)));
+		mTabHost.addTab(mTabHost.newTabSpec("yyt").setIndicator("营业厅",
+				getResources().getDrawable(R.drawable.yyt)).setContent(
+				new Intent(this, BusinessActivity.class)));
+		mTabHost.addTab(mTabHost.newTabSpec("gd").setIndicator("更多",
+				getResources().getDrawable(R.drawable.gd_01)).setContent(
+				new Intent(this, MoreActivity.class)));
 		
-//		mTabHost.setCurrentTabByTag(tag);
+		mTabHost.setCurrentTabByTag("sfb");
 	}
 
 }

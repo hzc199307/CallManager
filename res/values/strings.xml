@@ -6,5 +6,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_call_manager">CallManagerActivity</string>
     <string name="title_activity_tabs">TabsActivity</string>
+    <string name="title_activity_tongxun">TongxunActivity</string>
+    <string name="title_activity_business">BusinessActivity</string>
+    <string name="title_activity_more">MoreActivity</string>
 
 </resources>

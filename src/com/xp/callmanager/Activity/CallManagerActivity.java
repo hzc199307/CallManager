@@ -1,6 +1,6 @@
 package com.xp.callmanager.Activity;
 
-import com.example.callmanager.R;
+import com.xp.callmanager.R;
 
 import android.os.Bundle;
 import android.app.Activity;
