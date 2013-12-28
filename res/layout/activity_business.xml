@@ -1,58 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="余额说明"/>
-   
-    <TextView 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="业务说明"/>
-    
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="余额查询" 
-        android:focusable="false"
-        android:textColor="#DCDCDC"/>
-    
-        <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="发送给" />
+        android:layout_height="fill_parent"
+        android:background="#eee"
+        android:orientation="vertical" >
         
-       <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/numberPhone"
-        android:text="10086"
-        android:focusable="false"
-        android:textColor="#DCDCDC"
-           />
-       
-        <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="短信内容" />
-         <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/content"
-        android:maxLines="1"
-        android:text="101"
-        android:focusable="false"
-        android:textColor="#DCDCDC"
-           />
-         <Button
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:gravity="center_horizontal"
-             android:id="@+id/send"
-             android:text="发送免费短信服务"
-             />
-       
-</LinearLayout>
+
+		<RelativeLayout
+		    android:id="@+id/attributionButton"      				    
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/preference_single_item" >
+      		<ImageView
+      		    android:id="@+id/add_friend"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentLeft="true"
+        		android:src="@drawable/attribution" />    
+            <TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/add_friend"
+        		android:layout_centerVertical="true"
+        		android:padding="8dp" 
+        		android:text="余额查询"
+        		android:textSize="17sp"		
+				android:textColor="#000" /> 
+			<ImageView
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />      					
+   		</RelativeLayout>
+   		
+		
+
+    </LinearLayout>

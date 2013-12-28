@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -45,6 +46,10 @@
         <activity
             android:name="com.xp.callmanager.more.Activity.AttributionActivity"
             android:label="@string/title_activity_attribution" >
+        </activity>
+        <activity
+            android:name="com.xp.callmanager.Activity.SenterActivity"
+            android:label="@string/title_activity_senter" >
         </activity>
     </application>
 

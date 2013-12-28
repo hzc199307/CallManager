@@ -10,5 +10,6 @@
     <string name="title_activity_business">BusinessActivity</string>
     <string name="title_activity_more">MoreActivity</string>
     <string name="title_activity_attribution">AttributionActivity</string>
+    <string name="title_activity_senter">SenterActivity</string>
 
 </resources>
