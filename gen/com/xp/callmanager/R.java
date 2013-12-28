@@ -21,17 +21,25 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int bottom_bar=0x7f020000;
-        public static final int gd_01=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int sfb_01=0x7f020003;
-        public static final int sfb_02=0x7f020004;
-        public static final int tx_01=0x7f020005;
-        public static final int tx_02=0x7f020006;
-        public static final int yyt=0x7f020007;
+        public static final int attribution=0x7f020000;
+        public static final int bottom_bar=0x7f020001;
+        public static final int gd_01=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int ic_preference_single_normal=0x7f020004;
+        public static final int ic_preference_single_pressed=0x7f020005;
+        public static final int mm_submenu=0x7f020006;
+        public static final int mm_submenu_normal=0x7f020007;
+        public static final int mm_submenu_pressed=0x7f020008;
+        public static final int preference_single_item=0x7f020009;
+        public static final int sfb_01=0x7f02000a;
+        public static final int sfb_02=0x7f02000b;
+        public static final int tx_01=0x7f02000c;
+        public static final int tx_02=0x7f02000d;
+        public static final int yyt=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f080004;
+        public static final int action_settings=0x7f080005;
+        public static final int add_friend=0x7f080004;
         public static final int content=0x7f080001;
         public static final int hello=0x7f080003;
         public static final int numberPhone=0x7f080000;
@@ -73,17 +81,6 @@ public final class R {
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
-
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
-    
- API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
- API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 

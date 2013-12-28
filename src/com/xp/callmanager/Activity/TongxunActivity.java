@@ -1,11 +1,8 @@
 package com.xp.callmanager.Activity;
 
 import com.xp.callmanager.R;
-import com.xp.callmanager.R.layout;
-import com.xp.callmanager.R.menu;
-
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
 
 public class TongxunActivity extends Activity {
