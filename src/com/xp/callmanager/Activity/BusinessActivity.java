@@ -8,6 +8,11 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
+/**
+ * ÓªÒµÌü
+ * @author wangpei
+ *
+ */
 public class BusinessActivity extends Activity {
 
 	@Override
