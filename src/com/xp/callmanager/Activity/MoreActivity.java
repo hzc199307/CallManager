@@ -25,7 +25,7 @@ public class MoreActivity extends Activity {
 				Intent intent = new Intent(MoreActivity.this,
 						AttributionActivity.class); // 跳转到号码归属地查询页面
 				startActivity(intent);
-				MoreActivity.this.finish();
+				//MoreActivity.this.finish(); 这会导致MoreActivity被delete 以至于无法返回到它
 			}
 		});
 		;

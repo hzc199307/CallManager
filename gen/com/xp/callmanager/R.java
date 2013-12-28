@@ -40,21 +40,25 @@ public final class R {
         public static final int preference_item=0x7f020010;
         public static final int preference_last_item=0x7f020011;
         public static final int preference_single_item=0x7f020012;
-        public static final int sfb_01=0x7f020013;
-        public static final int sfb_02=0x7f020014;
-        public static final int tx_01=0x7f020015;
-        public static final int tx_02=0x7f020016;
-        public static final int yyt=0x7f020017;
+        public static final int search_bar_bg=0x7f020013;
+        public static final int search_bar_icon_normal=0x7f020014;
+        public static final int sfb_01=0x7f020015;
+        public static final int sfb_02=0x7f020016;
+        public static final int tx_01=0x7f020017;
+        public static final int tx_02=0x7f020018;
+        public static final int yyt=0x7f020019;
     }
     public static final class id {
-        public static final int action_settings=0x7f080007;
-        public static final int add_friend=0x7f080001;
-        public static final int attributionButton=0x7f080000;
-        public static final int content=0x7f080004;
-        public static final int hello=0x7f080002;
-        public static final int numberPhone=0x7f080003;
-        public static final int send=0x7f080005;
-        public static final int tx01=0x7f080006;
+        public static final int action_settings=0x7f080009;
+        public static final int add_friend=0x7f080003;
+        public static final int attributionButton=0x7f080002;
+        public static final int content=0x7f080006;
+        public static final int hello=0x7f080004;
+        public static final int numberPhone=0x7f080005;
+        public static final int searchButton=0x7f080000;
+        public static final int searchCityEdit=0x7f080001;
+        public static final int send=0x7f080007;
+        public static final int tx01=0x7f080008;
     }
     public static final class layout {
         public static final int activity_attribution=0x7f030000;

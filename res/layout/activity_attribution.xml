@@ -1,16 +1,37 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".AttributionActivity" >
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F4F4F4"
+    android:gravity="top"
+    android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:background="@drawable/search_bar_bg"
+        android:gravity="center" >
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/searchCityEdit"
+            android:layout_alignBottom="@+id/searchCityEdit"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_bar_icon_normal" />
+
+        <EditText
+            android:id="@+id/searchCityEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/searchButton"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入要查询的号码         "
+            android:singleLine="true"
+            android:textColor="#000" >
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>
