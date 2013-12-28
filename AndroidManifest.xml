@@ -46,6 +46,10 @@
             android:name="com.xp.callmanager.more.Activity.AttributionActivity"
             android:label="@string/title_activity_attribution" >
         </activity>
+        <activity
+            android:name="com.xp.callmanager.Activity.SenterActivity"
+            android:label="@string/title_activity_senter" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
