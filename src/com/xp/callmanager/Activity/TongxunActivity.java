@@ -1,9 +1,12 @@
 package com.xp.callmanager.Activity;
 
 import com.xp.callmanager.R;
+import com.xp.callmanager.util.PhoneInfoUtil;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class TongxunActivity extends Activity {
 
@@ -11,6 +14,8 @@ public class TongxunActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tongxun);
+		TextView tx01 = (TextView) findViewById(R.id.tx01);
+		tx01.setText(PhoneInfoUtil.getMyPhoneNumber(this));
 	}
 
 	@Override
