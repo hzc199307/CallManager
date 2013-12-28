@@ -42,6 +42,10 @@
             android:name="com.xp.callmanager.Activity.MoreActivity"
             android:label="@string/title_activity_more" >
         </activity>
+        <activity
+            android:name="com.xp.callmanager.more.Activity.AttributionActivity"
+            android:label="@string/title_activity_attribution" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
