@@ -29,12 +29,9 @@ public class AddPlan extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent checkIntent = new Intent(AddPlan.this,
-						CallManagerActivity.class);
 				// checkIntent.putExtra("filePath", SDPATH + "/test.txt");
 				Log.i("Lvliang", "check intent start");
 				AddPlan.this.finish();
-				startActivity(checkIntent);
 			}
 
 		});
