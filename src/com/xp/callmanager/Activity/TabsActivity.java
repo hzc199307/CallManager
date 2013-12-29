@@ -29,7 +29,7 @@ public class TabsActivity extends TabActivity {
 				.setContent(new Intent(this, TongxunActivity.class)));
 		mTabHost.addTab(mTabHost
 				.newTabSpec("yyt")
-				.setIndicator("营业厅", getResources().getDrawable(R.drawable.yyt))
+				.setIndicator("营业厅", getResources().getDrawable(R.drawable.yyt_01))
 				.setContent(new Intent(this, BusinessActivity.class)));
 		mTabHost.addTab(mTabHost
 				.newTabSpec("gd")

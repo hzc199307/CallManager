@@ -37,7 +37,6 @@ public class BusinessActivity extends Activity {
 				Intent intent = new Intent(BusinessActivity.this,
 						SenterActivity.class); // 跳转到号码归属地查询页面
 				startActivity(intent);
-				BusinessActivity.this.finish();
 			}
 		});
 		;

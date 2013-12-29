@@ -47,9 +47,14 @@ public final class R {
         public static final int tx_01=0x7f020017;
         public static final int tx_02=0x7f020018;
         public static final int yyt=0x7f020019;
+        public static final int yyt_01=0x7f02001a;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
+        public static final int LinearLayout01=0x7f08000f;
+        public static final int RelativeLayout01=0x7f080010;
+        public static final int TextDate=0x7f080012;
+        public static final int TextNumber=0x7f080011;
+        public static final int action_settings=0x7f080013;
         public static final int add_friend=0x7f080009;
         public static final int attributionButton=0x7f080008;
         public static final int content=0x7f08000c;
@@ -74,7 +79,8 @@ public final class R {
         public static final int activity_senter=0x7f030004;
         public static final int activity_tabs=0x7f030005;
         public static final int activity_tongxun=0x7f030006;
-        public static final int call_manager=0x7f030007;
+        public static final int call_info=0x7f030007;
+        public static final int call_manager=0x7f030008;
     }
     public static final class menu {
         public static final int attribution=0x7f070000;
