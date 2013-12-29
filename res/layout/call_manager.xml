@@ -1,65 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout
-	android:id="@+id/call_manager01"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:background="@drawable/b">
-<TextView
-	android:id="@+id/call_managertextview01"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Welcome"
-	android:textColor="#ff000000"
-	android:layout_x="127dp"
-	android:layout_y="2dp" />
-<Button
-	android:id="@+id/call_manager_button01"
-	android:layout_width="52dp"
-	android:layout_height="47dp"
-	android:text="&#28155;&#21152;"
-	android:layout_x="-2dp"
-	android:layout_y="2dp" />
-<Button
-	android:id="@+id/call_manager_button02"
-	android:layout_width="51dp"
-	android:layout_height="48dp"
-	android:text="&#35745;&#31639;"
-	android:layout_x="271dp"
-	android:layout_y="2dp" />
-<ListView
-	android:id="@+id/call_manager_listview01"
-	android:layout_width="317dp"
-	android:layout_height="219dp"
-	android:layout_x="2dp"
-	android:layout_y="212dp" />
-<Button
-	android:id="@+id/call_manager_datebutton01"
-	android:layout_width="281dp"
-	android:layout_height="38dp"
-	android:text="&#36215;&#22987;&#26085;&#26399;"
-	android:layout_x="20dp"
-	android:layout_y="79dp" />
-<Button
-	android:id="@+id/call_manager_datebutton02"
-	android:layout_width="282dp"
-	android:layout_height="37dp"
-	android:text="&#32456;&#27490;&#26085;&#26399;"
-	android:layout_x="18dp"
-	android:layout_y="150dp" />
-<TextView
-	android:id="@+id/call_managertextview02"
-	android:layout_width="250dp"
-	android:layout_height="24dp"
-	android:text=""
-	android:layout_x="34dp"
-	android:layout_y="51dp" />
-<TextView
-	android:id="@+id/call_managertextview03"
-	android:layout_width="252dp"
-	android:layout_height="23dp"
-	android:text=""
-	android:layout_x="35dp"
-	android:layout_y="125dp" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_manager01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical" >
 
-</AbsoluteLayout>
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="省费宝"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/call_manager_button01"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/title_btn_right"
+            android:text="添加"
+            android:textColor="#cccccc" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/call_manager_datebutton01"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:text="起始日期" />
+
+    <TextView
+        android:id="@+id/call_managertextview02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#515151"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/call_manager_datebutton02"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:text="终止日期" />
+
+    <TextView
+        android:id="@+id/call_managertextview03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#515151"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动感地带网聊套餐" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动感地带音乐套餐" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="神州行长话套餐" />
+    </LinearLayout>
+    <!--
+         上面的内容暂时代替本listview
+         <ListView
+        android:id="@+id/call_manager_listview01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />-->
+
+    <Button
+        android:id="@+id/call_manager_button02"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:text="开始计算" />
+
+</LinearLayout>
