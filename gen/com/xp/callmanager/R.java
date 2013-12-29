@@ -103,8 +103,8 @@ public final class R {
         public static final int call_manager_button01=0x7f080016;
         public static final int call_manager_button02=0x7f080017;
         public static final int call_manager_datebutton01=0x7f080019;
+        public static final int call_manager_datebutton02=0x7f08001a;
         public static final int call_manager_listview01=0x7f080018;
-        public static final int call_manager_timebutton01=0x7f08001a;
         public static final int call_managertextview01=0x7f080015;
         public static final int call_managertextview02=0x7f08001b;
         public static final int call_managertextview03=0x7f08001c;

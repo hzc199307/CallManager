@@ -37,14 +37,14 @@
 	android:id="@+id/call_manager_datebutton01"
 	android:layout_width="281dp"
 	android:layout_height="38dp"
-	android:text="&#26085;&#26399;"
+	android:text="&#36215;&#22987;&#26085;&#26399;"
 	android:layout_x="20dp"
 	android:layout_y="79dp" />
 <Button
-	android:id="@+id/call_manager_timebutton01"
+	android:id="@+id/call_manager_datebutton02"
 	android:layout_width="282dp"
 	android:layout_height="37dp"
-	android:text="&#26102;&#38388;"
+	android:text="&#32456;&#27490;&#26085;&#26399;"
 	android:layout_x="18dp"
 	android:layout_y="150dp" />
 <TextView

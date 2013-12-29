@@ -29,13 +29,13 @@ public class CallManagerActivity extends Activity implements OnClickListener {
 	private int minute;
 	private Button submit;
 	private Button tongji;
-	private TextView dateText;
-	private TextView timeText;
-	private Button dateButton;
-	private Button timeButton;
+	private TextView SdateText;
+	private TextView EdateText;
+	private Button SdateButton;
+	private Button EdateButton;
 
-	final static int DATE_DIALOG_ID = 1;
-	final static int TIME_DIALOG_ID = 2;
+	final static int S_DATE_DIALOG_ID = 1;
+	final static int E_DATE_DIALOG_ID = 2;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,22 +43,22 @@ public class CallManagerActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.call_manager);
 		
-		dateText = (TextView) findViewById(R.id.call_managertextview02);
-		timeText = (TextView) findViewById(R.id.call_managertextview03);
+		SdateText = (TextView) findViewById(R.id.call_managertextview02);
+		EdateText = (TextView) findViewById(R.id.call_managertextview03);
 		
-		dateButton = (Button) findViewById(R.id.call_manager_datebutton01);
-		dateButton.setOnClickListener(new OnClickListener() {
+		SdateButton = (Button) findViewById(R.id.call_manager_datebutton01);
+		SdateButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				showDialog(DATE_DIALOG_ID);
+				showDialog(S_DATE_DIALOG_ID);
 			}
 		});
 
-		timeButton = (Button) findViewById(R.id.call_manager_timebutton01);
-		timeButton.setOnClickListener(new OnClickListener() {
+		EdateButton = (Button) findViewById(R.id.call_manager_datebutton02);
+		EdateButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				showDialog(TIME_DIALOG_ID);
+				showDialog(E_DATE_DIALOG_ID);
 			}
 		});
 		
@@ -102,24 +102,25 @@ public class CallManagerActivity extends Activity implements OnClickListener {
 			protected Dialog onCreateDialog(int id) {
 				// TODO Auto-generated method stub
 				switch (id) {
-				case DATE_DIALOG_ID:
+				case S_DATE_DIALOG_ID:
 					return new DatePickerDialog(this, new OnDateSetListener() {
 						@Override
 						public void onDateSet(DatePicker view, int year,
 								int monthOfYear, int dayOfMonth) {
 							// TODO Auto-generated method stub
-							dateText.setText(year + "/" + (monthOfYear + 1) + "/"	+ dayOfMonth );
+							SdateText.setText(year + "/" + (monthOfYear + 1) + "/"	+ dayOfMonth );
 						}
 					}, year, monthOfYear, dayOfMonth);
 
-				case TIME_DIALOG_ID:
-					return new TimePickerDialog(this, new OnTimeSetListener() {
+				case E_DATE_DIALOG_ID:
+					return new DatePickerDialog(this, new OnDateSetListener() {
 						@Override
-						public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+						public void onDateSet(DatePicker view, int year,
+								int monthOfYear, int dayOfMonth) {
 							// TODO Auto-generated method stub
-							timeText.setText(hourOfDay + ":" + minute );
+							EdateText.setText(year + "/" + (monthOfYear + 1) + "/"	+ dayOfMonth );
 						}
-					}, hour, minute, true);
+					}, year, monthOfYear, dayOfMonth);
 				}
 				return null;
 			}
