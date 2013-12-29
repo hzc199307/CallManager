@@ -45,7 +45,7 @@
 	android:id="@+id/call_manager_addplan_Button10"
 	android:layout_width="322dp"
 	android:layout_height="wrap_content"
-	android:text="&#28155;&#21152;"
+	android:text="&#30830;&#23450;"
 	android:layout_x="-2dp"
 	android:layout_y="392dp" />
 <EditText

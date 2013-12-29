@@ -55,19 +55,19 @@
         </activity>
          <activity
             android:name="com.xp.callmanager.Activity.AddPlan"
-            android:label="@string/title_activity_senter" >
+            android:label="@string/title_AddPlan" >
         </activity>
          <activity
             android:name="com.xp.callmanager.Activity.CheckPlan"
-            android:label="@string/title_activity_senter" >
+            android:label="@string/title_CheckPlan" >
         </activity>
          <activity
             android:name="com.xp.callmanager.Activity.SelectPlan"
-            android:label="@string/title_activity_senter" >
+            android:label="@string/title_SelectPlan" >
         </activity>
         <activity
             android:name="com.xp.callmanager.Activity.ShowPlan"
-            android:label="@string/title_activity_senter" >
+            android:label="@string/title_ShowPlan" >
         </activity>
         
     </application>
