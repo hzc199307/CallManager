@@ -53,6 +53,23 @@
             android:name="com.xp.callmanager.Activity.SenterActivity"
             android:label="@string/title_activity_senter" >
         </activity>
+         <activity
+            android:name="com.xp.callmanager.Activity.AddPlan"
+            android:label="@string/title_activity_senter" >
+        </activity>
+         <activity
+            android:name="com.xp.callmanager.Activity.CheckPlan"
+            android:label="@string/title_activity_senter" >
+        </activity>
+         <activity
+            android:name="com.xp.callmanager.Activity.SelectPlan"
+            android:label="@string/title_activity_senter" >
+        </activity>
+        <activity
+            android:name="com.xp.callmanager.Activity.ShowPlan"
+            android:label="@string/title_activity_senter" >
+        </activity>
+        
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

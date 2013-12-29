@@ -16,6 +16,7 @@
     <string name="title_AddPlan">AddPlan</string>
      <string name="title_SelectPlan">SelectPlan</string>
       <string name="title_ShowPlan">ShowPlan</string>
+       <string name="title_attention">Attention</string>
        
 
 </resources>

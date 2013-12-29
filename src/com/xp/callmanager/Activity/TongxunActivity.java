@@ -19,7 +19,7 @@ public class TongxunActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tongxun);
-		TextView tx01 = (TextView) findViewById(R.id.tx01);
+		TextView tx01 = (TextView) findViewById(R.id.activity_tongxun_textview01);
 		tx01.setText(PhoneInfoUtil.getMyPhoneNumber(this));
 		ContentUriUtil mContentUriUtil = new ContentUriUtil(getContentResolver());
 		setListAdapter(mContentUriUtil.getOut0WithoutNameCursor());
