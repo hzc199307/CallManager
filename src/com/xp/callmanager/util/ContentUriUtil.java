@@ -177,4 +177,15 @@ public class ContentUriUtil {
 		}
 		return total;
 	}
+
+	/**
+	 * 获取通讯时间为0且没有姓名的已拨电话 游标
+	 * @return
+	 */
+	public Cursor getOut0WithoutNameCursor()
+	{
+		return mContentResolver.query(CallLog.Calls.CONTENT_URI,
+				null,
+				"type=2 and DURATION=0 and name is null ", null, CallLog.Calls.DEFAULT_SORT_ORDER);
+	}
 }

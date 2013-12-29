@@ -8,6 +8,12 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
+import com.xp.callmanager.bean.Attribution;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
 /**
  * 号码归属地 工具类
  * 
@@ -22,8 +28,14 @@ public class AttributionUtil {
 	 * @param phoneNumber
 	 * @return
 	 */
-	public static String getAttr(int phoneNumber) {
-		int phoneNumber7 = getPrev7of(phoneNumber);
+	private SQLiteDatabase db;
+	
+	public AttributionUtil(Context mContext) {
+		db = mContext.openOrCreateDatabase("attribution.db", Context.MODE_PRIVATE, null);  
+        db.execSQL("DROP TABLE IF EXISTS person"); 
+	}
+	public static String getAttr(long phoneNumber) {
+		long phoneNumber7 = getPrev7of(phoneNumber);
 		return null;
 	}
 
@@ -33,9 +45,20 @@ public class AttributionUtil {
 	 * @param phoneNumber
 	 * @return
 	 */
-	public static String getOperator(int phoneNumber) {
-		int phoneNumber3 = getPrev3of(phoneNumber);
+	public static String getOperator(long phoneNumber) {
+		long phoneNumber3 = getPrev3of(phoneNumber);
 		return null;
+	}
+	
+	public Attribution getAddrFromDB(long phoneNumber)
+	{
+		Cursor c = db.query("t_numberattribution", null, "number = "+getPrev7of(phoneNumber), null, null, null, null);
+		if(c.moveToFirst())
+		{
+			return new Attribution(c);
+		}
+		else
+			return null;
 	}
 
 	/**
@@ -46,7 +69,7 @@ public class AttributionUtil {
 	 * @return 类似 “<string xmlns="http://WebXml.com.cn/">1362222：广东 广州
 	 *         广东移动神州行卡</string>”
 	 */
-	private static String getAddrFromWeb(int phoneNumber) {
+	public static String getAddrFromWeb(long phoneNumber) {
 		String url = "http://webservice.webxml.com.cn//WebServices/MobileCodeWS.asmx/getMobileCodeInfo";
 		url += "?mobileCode=" + phoneNumber + "&userID=";
 		HttpGet httpGet = new HttpGet(url);
@@ -67,12 +90,32 @@ public class AttributionUtil {
 		return null;
 	}
 
-	private static int getPrev3of(int phoneNumber) {
+	private static long getPrev3of(long phoneNumber) {
 		return phoneNumber / 100000000;
 	}
 
-	private static int getPrev7of(int phoneNumber) {
-		return phoneNumber / 10000;
+	private static long getPrev7of(long phoneNumber) {
+		long temp = phoneNumber;
+		int weishu = 0;
+		while(temp>0)
+		{
+			temp/=10;
+			weishu++;
+		}
+		if(weishu>=7)
+		{
+			weishu-=7;
+			while(weishu>0){
+				weishu--;
+				phoneNumber/=10;
+			};
+			return phoneNumber;
+		}
+		else
+		{
+			return 0;
+		}
+		
 	}
 
 }

@@ -11,5 +11,11 @@
     <string name="title_activity_more">MoreActivity</string>
     <string name="title_activity_attribution">AttributionActivity</string>
     <string name="title_activity_senter">SenterActivity</string>
+     <string name="title_Welcome">Welcome</string>
+    <string name="title_CheckPlan">CheckPlan</string>
+    <string name="title_AddPlan">AddPlan</string>
+     <string name="title_SelectPlan">SelectPlan</string>
+      <string name="title_ShowPlan">ShowPlan</string>
+       
 
 </resources>
