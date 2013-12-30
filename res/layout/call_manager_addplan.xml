@@ -91,7 +91,7 @@
 
     <Button
         android:id="@+id/call_manager_addplan_Button10"
-        android:layout_width="322dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:text="确定" />
