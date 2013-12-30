@@ -22,22 +22,13 @@ import android.database.sqlite.SQLiteDatabase;
  */
 public class AttributionUtil {
 
-	/**
-	 * 得到号码的归属地 TODO
-	 * 
-	 * @param phoneNumber
-	 * @return
-	 */
 	private SQLiteDatabase db;
 	
 	public AttributionUtil(Context mContext) {
 		db = mContext.openOrCreateDatabase("attribution.db", Context.MODE_PRIVATE, null);  
         db.execSQL("DROP TABLE IF EXISTS person"); 
 	}
-	public static String getAttr(long phoneNumber) {
-		long phoneNumber7 = getPrev7of(phoneNumber);
-		return null;
-	}
+
 
 	/**
 	 * 得到号码的运营商 TODO
@@ -50,6 +41,11 @@ public class AttributionUtil {
 		return null;
 	}
 	
+	/**
+	 * 获得对应号码的 Attribution 对象
+	 * @param phoneNumber
+	 * @return
+	 */
 	public Attribution getAddrFromDB(long phoneNumber)
 	{
 		Cursor c = db.query("t_numberattribution", null, "number = "+getPrev7of(phoneNumber), null, null, null, null);
@@ -94,6 +90,11 @@ public class AttributionUtil {
 		return phoneNumber / 100000000;
 	}
 
+	/**
+	 * 返回号码的前7位
+	 * @param phoneNumber
+	 * @return
+	 */
 	private static long getPrev7of(long phoneNumber) {
 		long temp = phoneNumber;
 		int weishu = 0;

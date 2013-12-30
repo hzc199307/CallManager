@@ -33,7 +33,7 @@ public class TongxunActivity extends ListActivity {
 	}
 
 	/**
-	 * 根据查询条件或排序方式，进行数据查询并将查询到的结果填充到list的行
+	 * 根据游标，进行数据查询并将查询到的结果填充到list的行
 	 * @param mCursor
 	 */
 	protected void setListAdapter(Cursor mCursor){
@@ -47,6 +47,9 @@ public class TongxunActivity extends ListActivity {
 		setListAdapter(adapter);
 	}
 
+	/**
+	 * 主要响应listview的每一个Item的点击操作，弹出一个“是否加入通讯录”的对话框
+	 */
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
 		super.onListItemClick(l, v, position, id);

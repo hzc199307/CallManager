@@ -190,6 +190,12 @@ public class DBHelper extends SQLiteOpenHelper {
 		 */
 	}
 
+	/**
+	 * 对数据的查询
+	 * @param sql
+	 * @param args
+	 * @return
+	 */
 	public Cursor query(String sql, String[] args) {
 		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor cursor = db.rawQuery(sql, args);
